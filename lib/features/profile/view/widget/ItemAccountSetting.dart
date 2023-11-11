@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/utils/service/styles.dart';
 import 'package:flutter_application_1/features/profile/data/models/settingsModels.dart';
-import 'package:flutter_application_1/features/profile/view/widget/Section2Settings.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ItemAccountSetting extends StatelessWidget {
@@ -14,7 +13,7 @@ class ItemAccountSetting extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        settingModel.iconin,
+        Image.asset(settingModel.Imag),
         const SizedBox(width: 8),
         Text(
           settingModel.text,

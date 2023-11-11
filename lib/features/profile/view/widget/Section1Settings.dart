@@ -14,9 +14,9 @@ class Section1Settings extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Divider(),
-          // const SizedBox(height: 24),
+          const SizedBox(height: 24),
           Row(
             children: [
               ClipRRect(
@@ -49,7 +49,7 @@ class Section1Settings extends StatelessWidget {
             style: Styles.text24
                 .copyWith(fontSize: 20, fontWeight: FontWeight.w400),
           ),
-          const SizedBox(height: 25),
+          const SizedBox(height: 24),
           const Row(
             children: [
               StudentInfoItem(
@@ -82,13 +82,15 @@ class Section1Settings extends StatelessWidget {
                 ),
                 size: 20,
               )),
-          const SizedBox(height: 20),
+          const SizedBox(height: 24),
           CustemButton(
-            height: 50,
+            text: 'Edite',
+            height: 60,
             onTap: () {
               GoRouter.of(context).push(AppRouter.kediteProfile);
             },
           ),
+          const SizedBox(height: 24)
         ],
       ),
     );

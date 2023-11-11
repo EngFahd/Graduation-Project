@@ -7,28 +7,22 @@ class TextFeildProfile extends StatelessWidget {
     super.key,
     required this.hint,
     this.wideth,
-    this.iconInp,
+    this.imageicon,
   });
   final String hint;
   final double? wideth;
-  final Icon? iconInp;
+  final Widget? imageicon;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50,
+      height: 60,
       width: wideth ?? double.infinity,
       child: TextField(
         // cursorColor: Colors.white,
         decoration: InputDecoration(
             hintText: hint,
             hintStyle: Styles.text18Hint,
-            suffixIcon: IconButton(
-                onPressed: () {},
-                icon: iconInp ??
-                    const Icon(
-                      FontAwesomeIcons.check,
-                      color: Color(0xff104168),
-                    )),
+            suffixIcon: imageicon,
             enabledBorder: const OutlineInputBorder(
                 borderSide: BorderSide(
                     // color: Colors.red

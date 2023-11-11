@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 class CustemButton extends StatelessWidget {
-  CustemButton({super.key, this.onTap});
+  CustemButton({super.key, this.onTap, this.title});
   VoidCallback? onTap;
-  // String title;
+  final String? title;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -17,10 +16,10 @@ class CustemButton extends StatelessWidget {
           color: const Color(0xff104168),
         ),
         width: double.infinity,
-        child: const Center(
+        child: Center(
             child: Text(
-          'Edite',
-          style: TextStyle(
+          title ?? "Edite",
+          style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.w500,
             color: Colors.white,

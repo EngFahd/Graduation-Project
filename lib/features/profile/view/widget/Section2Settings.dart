@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/core/utils/service/styles.dart';
 import 'package:flutter_application_1/features/profile/data/models/settingsModels.dart';
 import 'package:flutter_application_1/features/profile/view/widget/ItemAccountSetting.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Section2Settings extends StatelessWidget {
   const Section2Settings({super.key});
@@ -13,13 +12,15 @@ class Section2Settings extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          const SizedBox(height: 24),
           const Text(
             "Accoun Settings",
             style: Styles.text32,
           ),
-          // SizedBox(height: 15),
+          const SizedBox(height: 20),
           SizedBox(
-            height: 150,
+            height: 210,
+            // color: Colors.red,
             child: ListView.builder(
               // shrinkWrap: true,
               // physics: const NeverScrollableScrollPhysics(),

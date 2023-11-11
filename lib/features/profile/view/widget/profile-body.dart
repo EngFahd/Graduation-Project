@@ -9,6 +9,9 @@ class ProfileBodey extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
+        Divider(
+          height: 1,
+        ),
         Section1Settings(),
         Divider(),
         Section2Settings(),
