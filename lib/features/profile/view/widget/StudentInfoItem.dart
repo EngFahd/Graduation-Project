@@ -5,15 +5,15 @@ class StudentInfoItem extends StatelessWidget {
   const StudentInfoItem({
     super.key,
     required this.text,
-    required this.iconin,
+    required this.imag,
   });
   final String text;
-  final Icon iconin;
+  final String imag;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        iconin,
+        Image.asset(imag),
         const SizedBox(width: 4),
         Text(
           text,

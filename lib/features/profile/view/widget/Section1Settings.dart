@@ -54,19 +54,12 @@ class Section1Settings extends StatelessWidget {
             children: [
               StudentInfoItem(
                   text: 'Mansoura University',
-                  iconin: Icon(
-                    FontAwesomeIcons.building,
-                    color: Color(0xff104168),
-                    size: 20,
-                  )),
+                  imag: 'assets/buliding.png',
+                  ),
               Spacer(),
               StudentInfoItem(
                 text: 'Mansoura',
-                iconin: Icon(
-                  FontAwesomeIcons.locationDot,
-                  color: Color(0xff104168),
-                  size: 20,
-                ),
+                imag: 'assets/location.png',
               ),
             ],
           ),
@@ -75,13 +68,8 @@ class Section1Settings extends StatelessWidget {
           ),
           const StudentInfoItem(
               text: "Fahd@gmail.com",
-              iconin: Icon(
-                FontAwesomeIcons.envelope,
-                color: Color(
-                  0xff104168,
-                ),
-                size: 20,
-              )),
+              imag: 'assets/massage.png',
+              ),
           const SizedBox(height: 24),
           CustemButton(
             text: 'Edite',

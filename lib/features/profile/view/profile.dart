@@ -19,7 +19,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Bottom_NavigationBar(),
+      bottomNavigationBar: const Bottom_NavigationBar(),
       appBar: AppBar(
         title: const Text(
           "Settings",
@@ -31,4 +31,3 @@ class _ProfileState extends State<Profile> {
     );
   }
 }
-
